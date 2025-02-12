@@ -1,0 +1,183 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+header {
+    background-color: #333;  
+    color: white;           
+    padding: 20px;      
+    text-align: center;     
+}
+header .logo {
+    font-size: 24px;       
+    font-weight: bold;       
+    color: white;            
+    margin: 0;              
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;  
+}
+
+header nav ul li {
+    margin-left: 20px;        
+}
+
+header nav ul li a {
+    color: white;             
+    text-decoration: none;    
+    font-size: 16px;
+}
+
+/* Hero Section */
+
+.hero {
+    background: #4CAF50;     
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background: #333;
+    color: #fff;
+}
+.features {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.features .feature {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.features .feature img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 24px;
+}
+
+.features h2 {
+    font-size: 24px;
+}
+
+.features p {
+    font-size: 16px;
+}
+
+.coverage {
+    padding: 40px 24px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.coverage h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.coverage p {
+    font-size: 18px;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+    .features .feature {
+        width: 45%;  
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .features .feature {
+        width: 100%;  
+    }
+    header nav ul {
+        flex-direction: column;  
+    }
+    .hero h1 {
+        font-size: 30px;  
+    }
+    .hero p {
+        font-size: 16px;  
+    }
+    .hero .btn {
+        font-size: 14px;  
+        padding: 8px 16px;
+    }
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MyVPN</div>
+        <nav>
+            <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#" class="btn">Get Started</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>The VPN That Just Works</h1>
+        <p>Go further with the #1 trusted leader in VPN</p>
+        <a href="#" class="btn">Get MyVPN</a>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <img src="C:\Users\PRAJWAL\Downloads\secure.jpeg" alt="Secure Access">
+            <h2>Secure Access, Worldwide</h2>
+            <p>Connect instantly from anywhere, to anywhere.</p>
+        </div>
+        <div class="feature">
+            <img src="C:\Users\PRAJWAL\Downloads\privacy.jpeg" alt="Privacy">
+            <h2>One Click to a Safer Internet</h2>
+            <p>Keep your personal data safe with one simple tap.</p>
+        </div>
+        <div class="feature">
+            <img src="C:\Users\PRAJWAL\Downloads\device.jpeg" alt="Devices">
+            <h2>Works on Every Device</h2>
+            <p>Use MyVPN on phone, tablet, laptop, and router.</p>
+        </div>
+    </section>
+    <section class="coverage">
+        <h2>Ultra-Fast Servers Around the Globe</h2>
+        <p>160 Locations • 94 Countries • Unlimited Bandwidth</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 MyVPN. All rights reserved.</p>
+    </footer>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign Up Now</h2>
+            <p>Enter your details to get started with MyVPN!</p>
+            <form>
+                <input type="text" placeholder="Name" required><br>
+                <input type="email" placeholder="Email" required><br>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var modal = document.getElementById('myModal');
+        var btn = document.querySelector('.hero .btn');
+        var span = document.querySelector('.modal .close');
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    
+</body>
+</html>
